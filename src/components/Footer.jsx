@@ -7,9 +7,19 @@ export default function Footer() {
                 <p>
                     Built with ♥ by a huge fan
                 </p>
-                <p className="text-[9px] text-zinc-700 tracking-widest">
+                <a 
+                    href="https://github.com/josefinacicchini" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-zinc-400 hover:text-white transition-colors duration-300 decoration-pad-magenta decoration-2"
+                >
+                    Josefina Cicchini
+        </a>
+                
+                <p className="text-[10px] pt-4 text-zinc-700 tracking-widest">
                     Audio samples & original track belong to Daft Punk.
                 </p>
+                
             </div>
             
             <a 
