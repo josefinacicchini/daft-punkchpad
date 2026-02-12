@@ -25,11 +25,12 @@ export default function Pad({ data, config }) {
             onMouseUp={handleRelease}
             onMouseLeave={handleRelease}
             className={`
-                relative aspect-square w-full md:w-28 md:h-28max-w-[120px] rounded-md transition-all duration-75
+                relative aspect-square w-full md:w-28 md:h-28 max-w-[120px] 
+                rounded-lg transition-all duration-75
                 flex items-center justify-center p-2 uppercase text-[9px] md:text-[11px] font-black
                 ${isActive 
-                    ? `${config.glow} text-white scale-95 border-b-0 translate-y-1` 
-                    : `bg-white/80 text-zinc-600 border-b-4 border-zinc-300 hover:bg-white`
+                    ? `${config.glow} text-white scale-95 translate-y-1 ring-2 ring-white/20` 
+                    : `bg-white/90 text-zinc-600 border-b-[6px] border-zinc-400 hover:bg-white`
                 }
             `}
         >
