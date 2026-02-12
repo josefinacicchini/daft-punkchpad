@@ -10,7 +10,7 @@ export default function Grid() {
     ];
 
     return (
-        <div className="grid grid-cols-4 gap-4 p-8 bg-zinc-900/50 rounded-2xl border border-zinc-800">
+        <div className="grid grid-cols-4 gap-3 md:gap-6 p-4 max-w-[600px] mx-auto bg-zinc-900/50 rounded-2xl border border-zinc-800">
             {SAMPLES.map((sample, index) => {
                 const config = rowConfigs[Math.floor(index / 4)];
                 return <Pad key={sample.id} data={sample} config={config} />;
@@ -18,4 +18,5 @@ export default function Grid() {
         </div>
     );
 }
+
 
