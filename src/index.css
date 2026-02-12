@@ -1,6 +1,23 @@
 @import "tailwindcss";
 
 @theme {
-  --color-daft-pink: #ff0055;
-  --color-daft-cyan: #00ffcc;
+  /* Tipografía */
+  --font-display: "Orbitron", sans-serif;
+
+  /* Colores */
+  --color-daft-black: #121214;
+  --color-pad-yellow: #FFCE05;
+  --color-pad-magenta: #FF00E4;
+  --color-pad-cyan: #14CCBB;
+  --color-pad-green: #39FF14;
+  
+  /* Sombras dinámicas */
+  --shadow-glow-yellow: 0 0 25px rgba(255, 206, 5, 0.6);
+  --shadow-glow-magenta: 0 0 25px rgba(255, 0, 228, 0.6);
+  --shadow-glow-cyan: 0 0 25px rgba(20, 204, 187, 0.6);
+  --shadow-glow-green: 0 0 25px rgba(57, 255, 20, 0.6);
+}
+
+.pad {
+    box-shadow: inset 0 0 10px rgba(255,255,255,0.5);
 }
